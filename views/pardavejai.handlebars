@@ -1,0 +1,16 @@
+<a href="/pardavejai/naujas">Prideti nauja parduotuve</a>
+<table>
+    <thead>
+        <tr>
+            <th>Parduotuve</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each pardavejai}}
+        <tr>
+            <td><a href="/pardavejai/{{id}}">{{pavadinimas}}</a></td>
+            <td><a href="/pardavejai/{{id}}/delete">X</a></td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
