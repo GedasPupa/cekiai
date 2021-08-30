@@ -1,0 +1,17 @@
+<a href="/mokejimuTipai/naujas">Prideti nauja mokėjimų tipą</a>
+<table>
+    <thead>
+        <tr>
+            <th>Mokejimų tipai</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each mokejimuTipai}}
+        <tr>
+            <td><a href="/mokejimuTipai/{{id}}">{{pavadinimas}}</a></td>
+            <td><a href="/mokejimuTipai/{{id}}/delete">X</a></td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+<a href="/">Back</a>
