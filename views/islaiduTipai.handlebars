@@ -1,0 +1,17 @@
+<a href="/islaiduTipai/naujas">Prideti nauja mokėjimų tipą</a>
+<table>
+    <thead>
+        <tr>
+            <th>Mokejimų tipai</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each islaiduTipai}}
+        <tr>
+            <td><a href="/islaiduTipai/{{id}}">{{pavadinimas}}</a></td>
+            <td><a href="/islaiduTipai/{{id}}/delete">X</a></td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+<a href="/">Back</a>
