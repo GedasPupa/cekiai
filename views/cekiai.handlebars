@@ -1,0 +1,21 @@
+<a href="/cekiai/naujas">Prideti nauja ČEKĮ</a>
+<table>
+    <thead>
+        <tr>
+            <th>Čekiai</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each cekiai}}
+        <tr>
+            <td><a href="/cekiai/{{id}}">{{id}}</a></td>
+            <td><a href="/cekiai/{{id}}">{{dateFormat data}}</a></td>
+            <td><a href="/cekiai/{{id}}">{{pavadinimas}}</a></td>
+            <td><a href="/cekiai/{{id}}">{{suma}}</a></td>
+
+            <td><a href="/cekiai/{{id}}/delete">X</a></td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+<a href="/">Back</a>

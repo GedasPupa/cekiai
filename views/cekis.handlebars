@@ -1,0 +1,11 @@
+<form action="/cekiai/save" method="POST">
+    {{#if id}}
+    <input type="hidden" name="id" value="{{id}}">
+    {{/if}}
+    Data: <input type="text" name="data" value="{{ data }}"><br>
+    Pardavejai_id: <input type="number" name="pardavejai_id" value="{{ pardavejai_id }}"><br>
+    Mokejimu_tipai_id: <input type="text" name="mokejimu_tipai_id" value="{{ mokejimu_tipai_id }}"><br>
+
+    <input type="submit" value="Save">
+</form>
+<a href="/cekiai">Back</a>
